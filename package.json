@@ -1,0 +1,50 @@
+{
+  "name": "ag-manager",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "author": "Elliot 'noftaly' Maisl",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "node dist/main.js",
+    "dev": "run-s build start",
+    "watch:start": "tsc-watch --onSuccess \"node ./dist/main.js\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/builders": "^1.2.0",
+    "@sapphire/decorators": "^5.0.0",
+    "@sapphire/discord-utilities": "2.11.6",
+    "@sapphire/discord.js-utilities": "5.0.1",
+    "@sapphire/framework": "3.1.1",
+    "@sapphire/plugin-logger": "3.0.1",
+    "@sapphire/utilities": "^3.9.3",
+    "dayjs": "^1.11.5",
+    "discord-api-types": "^0.33.5",
+    "discord.js": "^13.10.2",
+    "dotenv": "^16.0.2",
+    "monk": "^7.3.4",
+    "pupa": "^2.1.1",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.18",
+    "@types/ws": "^8.5.3",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "^8.23.1",
+    "eslint-config-noftalint": "^2.10.1",
+    "eslint-import-resolver-typescript": "^3.5.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-unicorn": "^43.0.2",
+    "npm-run-all": "^4.1.5",
+    "tsc-watch": "^5.0.3",
+    "typescript": "^4.8.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
